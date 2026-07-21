@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schlaraffia</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #e8e0c8;
+      font-family: Consolas, "Courier New", monospace;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #output {
+      flex: 1;
+      padding: 1rem;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      line-height: 1.35;
+    }
+
+    #command-line {
+      border: none;
+      border-top: 1px solid #444;
+      background: #1a1a1a;
+      color: #f4e7b5;
+      font-family: inherit;
+      font-size: 1rem;
+      padding: 0.75rem;
+      outline: none;
+    }
+
+    #command-line:disabled {
+      color: #777;
+      background: #151515;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="output"></div>
+  <input id="command-line" type="text" autocomplete="off" autofocus />
+
+  <script src="game.js"></script>
+</body>
+</html>
+
